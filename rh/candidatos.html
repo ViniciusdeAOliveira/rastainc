@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatos - Rasta INC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="nav nav-tabs justify">
+        <a class="nav-link" href="../index.html">Institucional</a>
+        <a class="nav-link" href="registro.html">Registro</a>
+        <a class="nav-link active" href="candidatos.html">Candidatos</a>
+    </nav>
+    <div class="container">    
+    <h1 class="text-center">Lista de Candidatos</h1>
+
+    <button id="carregar" class="btn btn-dark btn-lg">Carregar Dados</button>
+
+    <ul id="lista" class="list-group"></ul>
+
+    <!-- form -> agrupamento dos campos de formulário 
+        "form" sozinho -> somente campo
+        "form:post" -> vem com method post
+        "form:get" -> vem com method get 
+    
+    Diferença de métodos
+        get: dados enviados pela url do site
+        post: dados enviados de maneira "invisível" e mais segura
+    -->
+
+ 
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/lista-candidatos.js"></script>
+</body>
+</html>

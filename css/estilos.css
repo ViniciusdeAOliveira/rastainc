@@ -1,0 +1,90 @@
+/* A largura/altura definida é respeitada, ignorando as outras (margin,padding,etc) */
+
+*{box-sizing: border-box;}
+
+/* Medida "em" (eme) equivale ao font-size de um elemento
+
+font-size padrão do CSS é 16px 
+
+widht: 10em; 160px 
+padding: 2em; 32px */
+
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Reset de espaçamento */
+    margin: 0;
+
+}
+
+h1{
+    background-color: black;
+    color: white;
+    margin: 0; /* reset */
+    padding-left: 15px;
+}
+
+#imagem-decorativa{
+    /* Um elemento vazio precisa de dimensões para aparecer */
+    background-image: url(../imagens-projeto/teclado.jpg);
+    height: 450px; /*altura*/
+    background-attachment: fixed;
+    background-size: cover;
+       
+}
+
+main{
+    /* Para centralizar o bloco */
+    margin: auto;
+    width: 75%;
+}
+
+footer{
+    height: 200px;
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+    /* flex-box -> mais recomendado para blocos
+    display: flex para habilitar */
+    /* centralizar na vertical e horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Estilo para produtos */
+
+.treinamentos section{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: black 0 0 15px;
+    width: 30%;
+}
+
+.treinamentos{
+    display: flex; /* se comporta como linha/row */
+    justify-content: space-evenly;
+}
+
+.flutuar-imagem{
+    float: left;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    /* Mudando o flex da div para coluna */
+    .treinamentos{
+        flex-direction: column;        
+    }
+
+    .treinamentos section {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+

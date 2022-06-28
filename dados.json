@@ -1,0 +1,26 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador Java"
+    },
+    {
+      "id": 2,
+      "titulo": "Analista de Dados"
+    },
+    {
+      "id": 3,
+      "titulo": "Professor Excel"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "Teste",
+      "data": "1996-01-30",
+      "telefone": "11999999999",
+      "email": "teste@teste.com",
+      "vaga": "Programador Java",
+      "id": 1
+    }
+  ]
+}
